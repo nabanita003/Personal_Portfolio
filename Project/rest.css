@@ -1,0 +1,161 @@
+footer .icon{
+    margin-left: 90%;
+    font-size: 35px;
+}
+.education-experience {
+  margin-top: 20px;
+}
+
+.subheading {
+  font-size: 2rem;
+  color: var(--main-color);
+  margin-bottom: 25px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.timeline {
+  position: relative;
+  margin-left: 20px;
+  padding-left: 30px;
+  border-left: 3px solid var(--main-color);
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 30px;
+  padding-left: 15px;
+  background: var(--second-bg-color);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  border-radius: 8px;
+  padding: 15px 20px;
+  transition: 0.3s ease;
+}
+
+.timeline-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  top: 20px;
+  left: -36px;
+  width: 14px;
+  height: 14px;
+  background-color: var(--main-color);
+  border-radius: 50%;
+  border: 3px solid #fff;
+  box-shadow: 0 0 0 3px var(--main-color);
+}
+
+.timeline-item .date {
+  font-size: 0.95rem;
+}
+
+/* Resume Section Styling */
+.resume-section {
+  background-color: var(--second-bg-color);
+  color: #fff;
+  padding: 60px 30px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.resume-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.resume-title {
+  margin-top: 30px;
+  font-size: 3rem;
+  font-weight: 800;
+  position: relative;
+  text-decoration: underline;
+}
+
+.resume-subtitle {
+  font-size: 2rem;
+  color: #ccc;
+  max-width: 800px;
+  margin: 20px auto 0;
+}
+
+.section-heading {
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+  margin: 10px 0 30px;
+  border-bottom: 2px solid #d4af37;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.experience-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15rem;
+  justify-content: center;
+}
+
+.experience-card {
+  background-color: #263141;
+  padding: 95px 45px;
+  border-radius: 10px;
+  flex: 1 1 15%;
+  column-gap: 4rem;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.05);
+  transition: 0.3s ease-in-out;
+}
+
+.experience-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.1);
+}
+
+.date-range {
+  font-weight: 700;
+  font-size: 4rem;
+  color: #ffc107;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.job-title {
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 5px 0;
+}
+
+.company {
+  text-transform: uppercase;
+  font-size: 1rem;
+  color: #aaa;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+.experience-card p {
+  margin-bottom: 10px;
+  font-size: 0.95rem;
+  color: #ccc;
+}
+
+.experience-card ul {
+  list-style: disc;
+  padding-left: 20px;
+  font-size: 0.95rem;
+  color: #bbb;
+}
+
+.experience-card ul li {
+  margin-bottom: 10px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .experience-grid {
+    flex-direction: column;
+  }
+}
